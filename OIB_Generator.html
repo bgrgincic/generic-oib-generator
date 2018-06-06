@@ -1,0 +1,37 @@
+<script>
+var brojac=0;
+
+while(brojac < 5000) {
+
+document.write(GenerateOIB()  + '<br/>');
+
+      //  function body_onload() {
+      //      document.getElementById("txtOIB").value = GenerateOIB();
+       // }
+
+        function GenerateOIB() {
+            var oib = Math.floor(10000000000 * Math.random()).toString();
+
+			while(oib.length < 10)
+			{
+				oib = Math.floor(10000000000 * Math.random()).toString();
+			}
+			
+            var a = 10;
+            for (var i = 0; i < 10; i++) {
+                a = a + parseInt(oib.substring(i, i + 1));
+                a = a % 10;
+                if (a == 0) a = 10;
+                a *= 2;
+                a = a % 11;
+            }
+            var kontrolni = 11 - a;
+            if (kontrolni == 10) kontrolni = 0;
+
+            return oib + kontrolni;
+        }
+	brojac++;
+	}
+	
+	
+</script>
