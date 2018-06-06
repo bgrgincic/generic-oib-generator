@@ -2,7 +2,7 @@
 
 Random generic OIB generator
 
-A javascript driven page for generating a large number of generic OIB numbers.
+A javascript driven page for generating a large number of generic OIB numbers. The numbers are completely random.
 
 The Personal identification number (Croatian: Osobni identifikacijski broj or OIB) is a permanent national identification number of every Croatian citizen and legal persons domiciled in the Republic of Croatia. 
 
